@@ -1,0 +1,95 @@
+
+.loginContainer {
+    background: linear-gradient(to right, #171f3b, #223069);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.loginHeader {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.loginTitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: normal;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formInput {
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-size: 1rem;
+    transition: 100ms;
+    outline: none;
+    background-color: white;
+    color: #0B1020;
+}
+
+.formInput:focus {
+    opacity: 75%;
+}
+
+.formInput:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+.loginButton {
+    width: 100%;
+    background: var(--botao-background);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 100ms;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.loginButton:hover {
+    opacity: 75%;
+    transform: scale(1.02, 1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.loginButton:active {
+    transform: scale(1);
+}
+.linkscadastro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.linkscadastro div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,167 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+.form {
+    background: var(--cartao-background);
+    display: flex;
+    flex-direction: column;
+    grid-area: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 100ms;
+    box-shadow: var(--box-shadow);
+}
+
+.gridForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.itemForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+
+.botao {
+    background: var(--botao-background);
+    padding: 20px;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    font-size: 1.1em;
+    margin: 10px;
+    align-self: center;
+    transition: 100ms;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao:hover {
+    transform: scale(1.02, 1.05);
+}
+.botao:active {
+    transform: scale(1);
+}
+.input, .radio {
+    background-color: white;
+    color: #0B1020;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: none;
+    align-self: center;
+    width: 90%;
+}
+label, p {
+    font-size: 1.10em;
+}
+.input:focus {
+    opacity: 75%;
+}
+.input:hover {
+    transform: scale(1.02, 1.05);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #182242;
+    border-radius: 7px;
+    padding: 5px;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+}
+.radio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+}
+.input[type="date"] {
+    width: fit-content;
+    font-size: 1em;
+}
+.input[type="date"]:active {
+    opacity: 75%;
+}
+.radio input, .check input {
+    display: none;
+}
+.radio label, .check label {
+    cursor: pointer;
+}
+.radio input:checked + label, .check input:checked + label {
+    transform: scale(0.95);
+    opacity: 75%;
+    font-weight: bold;
+}
+.radio label:hover, .check label:hover {
+    opacity: 75%;
+}
+.check {
+    color: #0B1020;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 10px;
+    width: 100%;
+}
+.check label {
+    background-color: white;
+    border-radius: 7px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.escondido {
+    display: none;
+}
+.escondido * {
+    display: none;
+}
+
+.pesquisar {
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--azul-escuro);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.pesquisar:hover {
+    transform: scale(1.05);
+}
+.pesquisar:active {
+    transform: scale(1);
+}
+.pesquisar::before {
+    content: "";
+    background-image: url(../../assets/filter.png);
+    background-size: 20px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    top: 0; right: 0; bottom: 0; left: 0;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --cartao-background: linear-gradient(to right, #151e3a, #151e41);
+  --botao-background: linear-gradient(to right, #5064b4, #303c66);
+  --branco: rgb(238, 238, 238);
+  --preto: rgb(15, 15, 15);
+  --azul-escuro: #151e41;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 100ms;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+.body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #2F4186, #0B1020);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.tituloPagina {
+  background: linear-gradient(to right, #5166b9, #232e50 );
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+}
+
+.tituloPagina h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}

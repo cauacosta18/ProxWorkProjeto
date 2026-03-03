@@ -1,0 +1,117 @@
+.perfilContainer {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px auto;
+    background: linear-gradient(90deg, #EDEDED 0%, #C3C3C3 100%);
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.perfilHeader {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    margin: 10px auto; /* Centralizado horizontalmente */
+    background: var(--cartao-background);
+    border-radius: 10px;
+}
+
+.perfiltitle {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+}
+
+.perfilist {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Grid de categorias - 3 colunas */
+
+.perfilbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;    
+    
+}
+
+.perfilbutton {
+    background: var(--cartao-background);
+    padding: 20px 50px;
+    border-radius: 7px;
+    width: fit-content;
+
+    border: none;
+    font-size: 1.1em;
+    align-self: center;
+    transition: 100ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.perfilbutton:hover {
+    transform: scale(1.05, 1.1);
+    box-shadow: var(--box-shadow);
+
+}
+.perfilbutton:active {
+    transform: scale(1);
+}
+
+
+.ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.check {
+    color: #0B1020;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 10px;
+    width: 100%;
+}
+.check li {
+    background: var(--cartao-background);
+    color: white;
+    border-radius: 7px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.copiar::before {
+    content: "";
+    background-image: url(../assets/copy.png);
+    background-size: 20px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    top: 0; right: 0; bottom: 0; left: 0;
+}

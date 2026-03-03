@@ -1,0 +1,26 @@
+.footer {
+    background: linear-gradient(to right, #232e50, #5166b9 );
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    
+    .footerContent {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

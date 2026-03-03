@@ -1,0 +1,1 @@
+export { default as Hometwo } from './Hometwo';

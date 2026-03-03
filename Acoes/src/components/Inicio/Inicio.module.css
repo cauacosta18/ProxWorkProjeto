@@ -1,0 +1,46 @@
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+.content * {
+    margin: 0;
+}
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heroSection {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    background: var(--cartao-background);
+    margin: auto;
+    height: 80%;
+    box-shadow: var(--box-shadow);
+}
+
+.heroTitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+}
+
+.heroDescription {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.headerlogo {
+    width: 400px;
+}
